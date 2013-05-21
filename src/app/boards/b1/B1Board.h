@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "No320_UITabBaseBoard.h"
+#import "TableBoard.h"
 
 #import "LoginBoard.h"
 
 @interface B1Board : No320_UITabBaseBoard
+
+{
+    TableBoard *    _table;
+}
+
+@property(nonatomic,retain,readwrite) NSMutableArray *_news_source_array;
 
 @end

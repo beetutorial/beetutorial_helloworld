@@ -8,8 +8,10 @@
 
 #import "B1Board.h"
 
-@implementation B1Board
+#import "TableBoard.h"
 
+@implementation B1Board
+@synthesize _news_source_array;
 
 #pragma mark - Lifecycle
 
@@ -17,8 +19,10 @@
 {
 	[super load];
     //do
-    
+    self._news_source_array = [NSMutableArray array];
  
+    
+    [self api_get_top_news];
 }
 
 - (void)unload
@@ -38,8 +42,12 @@
 	
 	if ( [signal is:Lesson2View2.TEST] )
 	{
-                [BeeCustomTabBoard hide:YES animated:NO];
+        [self api_get_top_news];
+        [BeeCustomTabBoard hide:YES animated:NO];
         [[self stack] pushBoard:[LoginBoard board] animated:YES];
+        
+//        [[self stack] pushBoard:[TableBoard board] animated:YES];
+        
 //		[BeeUIAlertView showMessage:@"Signal received" cancelTitle:@"OK"];
 	}
 }
@@ -104,6 +112,9 @@
 //		_innerView.backgroundColor = [UIColor clearColor];
 //        [self.view addSubview:_innerView];
         
+        _table = [TableBoard board];
+        
+        [self.view addSubview:_table.view];
         
 //        [self addTopTabView];
 	}
