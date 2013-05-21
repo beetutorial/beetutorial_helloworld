@@ -55,7 +55,7 @@
 #define __BEE_UNITTEST__		(1)	// 是否UnitTest
 
 #if TARGET_OS_IPHONE
-#define __BEE_DEBUGGER__		(0)	// 是否显示“小虫子”
+#define __BEE_DEBUGGER__		(1)	// 是否显示“小虫子”
 #define __BEE_CRASHLOG__		(0)	// （未完成）
 #define __BEE_WIREFRAME__		(1)	// 是否显示WireFrame
 #endif

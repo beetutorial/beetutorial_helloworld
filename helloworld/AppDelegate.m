@@ -6,10 +6,9 @@
 #import "AppDelegate.h"
 #import "CatelogBoard.h"
 #import "DribbbleController.h"
-
-#import "Bee.h"
 #import "Bee_Debug.h"
-// #import "Bee_UnitTest.h"
+
+#import "Bee_CustomTabBoard.h"
 
 #pragma mark -
 
@@ -23,7 +22,8 @@
 
     self.window = [[[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]] autorelease];
     self.window.backgroundColor = [UIColor whiteColor];
-	self.window.rootViewController = [BeeUIStackGroup stackGroupWithFirstStack:[BeeUIStack stackWithFirstBoard:[CatelogBoard board]]];
+//	self.window.rootViewController = [BeeUIStackGroup stackGroupWithFirstStack:[BeeUIStack stackWithFirstBoard:[CatelogBoard board]]];
+    self.window.rootViewController = [[BeeCustomTabBoard alloc] initWithBundleName:@"finiance_tab"];
     [self.window makeKeyAndVisible];
 	
 	[BeeDebugger show];

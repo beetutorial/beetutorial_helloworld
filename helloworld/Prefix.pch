@@ -13,6 +13,8 @@
 #import <Foundation/Foundation.h>
 #import <QuartzCore/QuartzCore.h>
 #import <TargetConditionals.h>
+#import "Bee.h"
+#import "helper.h"
 #endif
 
 #undef	NSLog

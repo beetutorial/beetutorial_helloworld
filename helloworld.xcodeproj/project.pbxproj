@@ -222,6 +222,23 @@
 		25593065174A70800033882B /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25593064174A70800033882B /* libz.dylib */; };
 		25593067174A70800033882B /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25593066174A70800033882B /* libxml2.dylib */; };
 		25593069174A70800033882B /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 25593068174A70800033882B /* libsqlite3.0.dylib */; };
+		25593088174A73940033882B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 2559306F174A73940033882B /* README.md */; };
+		25593089174A73940033882B /* sina_finance_ios.db in Resources */ = {isa = PBXBuildFile; fileRef = 25593081174A73940033882B /* sina_finance_ios.db */; };
+		2559308C174A74640033882B /* finiance_tab.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2559308A174A74640033882B /* finiance_tab.bundle */; };
+		2559308D174A74640033882B /* ui_tab_base_board.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2559308B174A74640033882B /* ui_tab_base_board.bundle */; };
+		25593097174A76010033882B /* Bee_CustomTabBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 25593090174A76010033882B /* Bee_CustomTabBoard.m */; };
+		25593098174A76010033882B /* Bee_TabbarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 25593092174A76010033882B /* Bee_TabbarItem.m */; };
+		25593099174A76010033882B /* no320_bee_tab_board.m in Sources */ = {isa = PBXBuildFile; fileRef = 25593095174A76010033882B /* no320_bee_tab_board.m */; };
+		2559309A174A76010033882B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 25593096174A76010033882B /* README.md */; };
+		2559309E174A77C30033882B /* No320_UITabBaseBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2559309D174A77C30033882B /* No320_UITabBaseBoard.m */; };
+		255930A1174A781B0033882B /* Bee_UITopTab.m in Sources */ = {isa = PBXBuildFile; fileRef = 255930A0174A781B0033882B /* Bee_UITopTab.m */; };
+		255930AB174A796A0033882B /* B1Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 255930AA174A796A0033882B /* B1Board.m */; };
+		255930AE174A798F0033882B /* B2Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 255930AD174A798F0033882B /* B2Board.m */; };
+		255930B1174A799C0033882B /* B3Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 255930B0174A799C0033882B /* B3Board.m */; };
+		255930B4174A79A90033882B /* B4Board.m in Sources */ = {isa = PBXBuildFile; fileRef = 255930B3174A79A90033882B /* B4Board.m */; };
+		25D56019174A83D30042D079 /* LoginBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D56018174A83D30042D079 /* LoginBoard.m */; };
+		25D5601D174A86500042D079 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 25D5601B174A86500042D079 /* LoginViewController.m */; };
+		25D5601E174A86500042D079 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 25D5601C174A86500042D079 /* LoginViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -640,6 +657,38 @@
 		25593064174A70800033882B /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = /usr/lib/libz.dylib; sourceTree = "<absolute>"; };
 		25593066174A70800033882B /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = /usr/lib/libxml2.dylib; sourceTree = "<absolute>"; };
 		25593068174A70800033882B /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = /usr/lib/libsqlite3.0.dylib; sourceTree = "<absolute>"; };
+		2559306F174A73940033882B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		25593081174A73940033882B /* sina_finance_ios.db */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sina_finance_ios.db; sourceTree = "<group>"; };
+		2559308A174A74640033882B /* finiance_tab.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = finiance_tab.bundle; sourceTree = "<group>"; };
+		2559308B174A74640033882B /* ui_tab_base_board.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ui_tab_base_board.bundle; sourceTree = "<group>"; };
+		2559308F174A76010033882B /* Bee_CustomTabBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee_CustomTabBoard.h; sourceTree = "<group>"; };
+		25593090174A76010033882B /* Bee_CustomTabBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_CustomTabBoard.m; sourceTree = "<group>"; };
+		25593091174A76010033882B /* Bee_TabbarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee_TabbarItem.h; sourceTree = "<group>"; };
+		25593092174A76010033882B /* Bee_TabbarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_TabbarItem.m; sourceTree = "<group>"; };
+		25593093174A76010033882B /* CustomerTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomerTab.h; sourceTree = "<group>"; };
+		25593094174A76010033882B /* no320_bee_tab_board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = no320_bee_tab_board.h; sourceTree = "<group>"; };
+		25593095174A76010033882B /* no320_bee_tab_board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = no320_bee_tab_board.m; sourceTree = "<group>"; };
+		25593096174A76010033882B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
+		2559309C174A77C30033882B /* No320_UITabBaseBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = No320_UITabBaseBoard.h; sourceTree = "<group>"; };
+		2559309D174A77C30033882B /* No320_UITabBaseBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = No320_UITabBaseBoard.m; sourceTree = "<group>"; };
+		2559309F174A781B0033882B /* Bee_UITopTab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bee_UITopTab.h; sourceTree = "<group>"; };
+		255930A0174A781B0033882B /* Bee_UITopTab.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bee_UITopTab.m; sourceTree = "<group>"; };
+		255930A2174A78560033882B /* frame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = frame.h; sourceTree = "<group>"; };
+		255930A3174A78560033882B /* mybundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mybundle.h; sourceTree = "<group>"; };
+		255930A4174A78870033882B /* helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = helper.h; sourceTree = "<group>"; };
+		255930A9174A796A0033882B /* B1Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B1Board.h; sourceTree = "<group>"; };
+		255930AA174A796A0033882B /* B1Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B1Board.m; sourceTree = "<group>"; };
+		255930AC174A798F0033882B /* B2Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B2Board.h; sourceTree = "<group>"; };
+		255930AD174A798F0033882B /* B2Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B2Board.m; sourceTree = "<group>"; };
+		255930AF174A799C0033882B /* B3Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B3Board.h; sourceTree = "<group>"; };
+		255930B0174A799C0033882B /* B3Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B3Board.m; sourceTree = "<group>"; };
+		255930B2174A79A90033882B /* B4Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = B4Board.h; sourceTree = "<group>"; };
+		255930B3174A79A90033882B /* B4Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = B4Board.m; sourceTree = "<group>"; };
+		25D56017174A83D30042D079 /* LoginBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginBoard.h; sourceTree = "<group>"; };
+		25D56018174A83D30042D079 /* LoginBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginBoard.m; sourceTree = "<group>"; };
+		25D5601A174A86500042D079 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		25D5601B174A86500042D079 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		25D5601C174A86500042D079 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -670,6 +719,9 @@
 		25592DBD174A70790033882B = {
 			isa = PBXGroup;
 			children = (
+				2559306F174A73940033882B /* README.md */,
+				25593070174A73940033882B /* src */,
+				25593087174A73940033882B /* vendor */,
 				25592DE2174A70790033882B /* helloworld */,
 				25592DCB174A70790033882B /* Frameworks */,
 				25592DC9174A70790033882B /* Products */,
@@ -687,6 +739,8 @@
 		25592DCB174A70790033882B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				25593066174A70800033882B /* libxml2.dylib */,
+				25593064174A70800033882B /* libz.dylib */,
 				25592DCC174A70790033882B /* QuartzCore.framework */,
 				25592DCE174A70790033882B /* Security.framework */,
 				25592DD0174A70790033882B /* SystemConfiguration.framework */,
@@ -705,8 +759,6 @@
 		25592DE2174A70790033882B /* helloworld */ = {
 			isa = PBXGroup;
 			children = (
-				25593064174A70800033882B /* libz.dylib */,
-				25593066174A70800033882B /* libxml2.dylib */,
 				25592DE3174A70790033882B /* Resources */,
 				25592DFD174A707A0033882B /* libs */,
 				2559305D174A70800033882B /* Supporting Files */,
@@ -1432,6 +1484,275 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		25593070174A73940033882B /* src */ = {
+			isa = PBXGroup;
+			children = (
+				25593071174A73940033882B /* app */,
+				2559307C174A73940033882B /* config */,
+				25593080174A73940033882B /* db */,
+				25593082174A73940033882B /* doc */,
+				25593083174A73940033882B /* log */,
+				25593084174A73940033882B /* script */,
+				25593085174A73940033882B /* server */,
+				25593086174A73940033882B /* test */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		25593071174A73940033882B /* app */ = {
+			isa = PBXGroup;
+			children = (
+				25593072174A73940033882B /* apis */,
+				25593073174A73940033882B /* assets */,
+				25593077174A73940033882B /* boards */,
+				25593078174A73940033882B /* controllers */,
+				25593079174A73940033882B /* helpers */,
+				2559307A174A73940033882B /* models */,
+				2559307B174A73940033882B /* views */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		25593072174A73940033882B /* apis */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = apis;
+			sourceTree = "<group>";
+		};
+		25593073174A73940033882B /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				25593074174A73940033882B /* bundles */,
+				25593075174A73940033882B /* images */,
+				25593076174A73940033882B /* xibs */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		25593074174A73940033882B /* bundles */ = {
+			isa = PBXGroup;
+			children = (
+				2559308A174A74640033882B /* finiance_tab.bundle */,
+				2559308B174A74640033882B /* ui_tab_base_board.bundle */,
+			);
+			path = bundles;
+			sourceTree = "<group>";
+		};
+		25593075174A73940033882B /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		25593076174A73940033882B /* xibs */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = xibs;
+			sourceTree = "<group>";
+		};
+		25593077174A73940033882B /* boards */ = {
+			isa = PBXGroup;
+			children = (
+				25D56015174A83AC0042D079 /* login */,
+				255930A6174A792C0033882B /* b1 */,
+				255930A7174A792C0033882B /* b2 */,
+				255930A5174A792C0033882B /* b3 */,
+				255930A8174A792C0033882B /* b4 */,
+				2559309B174A77C30033882B /* base */,
+			);
+			path = boards;
+			sourceTree = "<group>";
+		};
+		25593078174A73940033882B /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				25D5601A174A86500042D079 /* LoginViewController.h */,
+				25D5601B174A86500042D079 /* LoginViewController.m */,
+				25D5601C174A86500042D079 /* LoginViewController.xib */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		25593079174A73940033882B /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				255930A4174A78870033882B /* helper.h */,
+				255930A2174A78560033882B /* frame.h */,
+				255930A3174A78560033882B /* mybundle.h */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		2559307A174A73940033882B /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		2559307B174A73940033882B /* views */ = {
+			isa = PBXGroup;
+			children = (
+				2559309F174A781B0033882B /* Bee_UITopTab.h */,
+				255930A0174A781B0033882B /* Bee_UITopTab.m */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		2559307C174A73940033882B /* config */ = {
+			isa = PBXGroup;
+			children = (
+				2559307D174A73940033882B /* environments */,
+				2559307E174A73940033882B /* initializers */,
+				2559307F174A73940033882B /* locales */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		2559307D174A73940033882B /* environments */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = environments;
+			sourceTree = "<group>";
+		};
+		2559307E174A73940033882B /* initializers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = initializers;
+			sourceTree = "<group>";
+		};
+		2559307F174A73940033882B /* locales */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = locales;
+			sourceTree = "<group>";
+		};
+		25593080174A73940033882B /* db */ = {
+			isa = PBXGroup;
+			children = (
+				25593081174A73940033882B /* sina_finance_ios.db */,
+			);
+			path = db;
+			sourceTree = "<group>";
+		};
+		25593082174A73940033882B /* doc */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = doc;
+			sourceTree = "<group>";
+		};
+		25593083174A73940033882B /* log */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = log;
+			sourceTree = "<group>";
+		};
+		25593084174A73940033882B /* script */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = script;
+			sourceTree = "<group>";
+		};
+		25593085174A73940033882B /* server */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = server;
+			sourceTree = "<group>";
+		};
+		25593086174A73940033882B /* test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = test;
+			sourceTree = "<group>";
+		};
+		25593087174A73940033882B /* vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2559308E174A76010033882B /* bee_tab */,
+			);
+			path = vendor;
+			sourceTree = "<group>";
+		};
+		2559308E174A76010033882B /* bee_tab */ = {
+			isa = PBXGroup;
+			children = (
+				2559308F174A76010033882B /* Bee_CustomTabBoard.h */,
+				25593090174A76010033882B /* Bee_CustomTabBoard.m */,
+				25593091174A76010033882B /* Bee_TabbarItem.h */,
+				25593092174A76010033882B /* Bee_TabbarItem.m */,
+				25593093174A76010033882B /* CustomerTab.h */,
+				25593094174A76010033882B /* no320_bee_tab_board.h */,
+				25593095174A76010033882B /* no320_bee_tab_board.m */,
+				25593096174A76010033882B /* README.md */,
+			);
+			path = bee_tab;
+			sourceTree = "<group>";
+		};
+		2559309B174A77C30033882B /* base */ = {
+			isa = PBXGroup;
+			children = (
+				2559309C174A77C30033882B /* No320_UITabBaseBoard.h */,
+				2559309D174A77C30033882B /* No320_UITabBaseBoard.m */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		255930A5174A792C0033882B /* b3 */ = {
+			isa = PBXGroup;
+			children = (
+				255930AF174A799C0033882B /* B3Board.h */,
+				255930B0174A799C0033882B /* B3Board.m */,
+			);
+			path = b3;
+			sourceTree = "<group>";
+		};
+		255930A6174A792C0033882B /* b1 */ = {
+			isa = PBXGroup;
+			children = (
+				255930A9174A796A0033882B /* B1Board.h */,
+				255930AA174A796A0033882B /* B1Board.m */,
+			);
+			path = b1;
+			sourceTree = "<group>";
+		};
+		255930A7174A792C0033882B /* b2 */ = {
+			isa = PBXGroup;
+			children = (
+				255930AC174A798F0033882B /* B2Board.h */,
+				255930AD174A798F0033882B /* B2Board.m */,
+			);
+			path = b2;
+			sourceTree = "<group>";
+		};
+		255930A8174A792C0033882B /* b4 */ = {
+			isa = PBXGroup;
+			children = (
+				255930B2174A79A90033882B /* B4Board.h */,
+				255930B3174A79A90033882B /* B4Board.m */,
+			);
+			path = b4;
+			sourceTree = "<group>";
+		};
+		25D56015174A83AC0042D079 /* login */ = {
+			isa = PBXGroup;
+			children = (
+				25D56017174A83D30042D079 /* LoginBoard.h */,
+				25D56018174A83D30042D079 /* LoginBoard.m */,
+			);
+			path = login;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1494,6 +1815,12 @@
 				25592DF7174A70790033882B /* icon.png in Resources */,
 				25592DF9174A70790033882B /* icon@2x.png in Resources */,
 				25592DFC174A70790033882B /* iTunesArtwork in Resources */,
+				25593088174A73940033882B /* README.md in Resources */,
+				25593089174A73940033882B /* sina_finance_ios.db in Resources */,
+				2559308C174A74640033882B /* finiance_tab.bundle in Resources */,
+				2559308D174A74640033882B /* ui_tab_base_board.bundle in Resources */,
+				2559309A174A76010033882B /* README.md in Resources */,
+				25D5601E174A86500042D079 /* LoginViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1693,6 +2020,17 @@
 				2559305C174A70800033882B /* DribbbleController.mm in Sources */,
 				25593060174A70800033882B /* main.m in Sources */,
 				25593063174A70800033882B /* AppDelegate.m in Sources */,
+				25593097174A76010033882B /* Bee_CustomTabBoard.m in Sources */,
+				25593098174A76010033882B /* Bee_TabbarItem.m in Sources */,
+				25593099174A76010033882B /* no320_bee_tab_board.m in Sources */,
+				2559309E174A77C30033882B /* No320_UITabBaseBoard.m in Sources */,
+				255930A1174A781B0033882B /* Bee_UITopTab.m in Sources */,
+				255930AB174A796A0033882B /* B1Board.m in Sources */,
+				255930AE174A798F0033882B /* B2Board.m in Sources */,
+				255930B1174A799C0033882B /* B3Board.m in Sources */,
+				255930B4174A79A90033882B /* B4Board.m in Sources */,
+				25D56019174A83D30042D079 /* LoginBoard.m in Sources */,
+				25D5601D174A86500042D079 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1794,6 +2132,7 @@
 				2559306E174A70800033882B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

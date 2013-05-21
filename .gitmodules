@@ -1,0 +1,3 @@
+[submodule "vendor/bee_tab"]
+	path = vendor/bee_tab
+	url = https://github.com/beetutorial/bee_tab.git
