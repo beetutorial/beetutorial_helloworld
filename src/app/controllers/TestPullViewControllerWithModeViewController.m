@@ -44,55 +44,22 @@
 
 -(int)set_page_count
 {
-    return 20;
+    return 2;
 }
 
 -(void)init_table_data
 {
-//    [[BaiduApi2 sharedBaiduApi2] getPath:@"search" parameters:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%d",1] forKey:@"pageno"]  success:^(AFHTTPRequestOperation *operation, id JSON) {
-//        
-//        NSArray *f = [JSON objectFromJSONData];
-//        [self init_table_data_callback:f];
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        
-//    }];
-    
-    self.source_array = [delegate_board init_table_data];
-    [self init_table_data_callback:self.source_array];
+    if ([delegate_board respondsToSelector:@selector(init_table_data)]) {
+        [delegate_board init_table_data];
+    }
 }
-
--(void)init_table_data_callback:(NSMutableArray *)r
-{
-    [super init_table_data_callback:r];
-}
-
 -(void)reload_next_page:(int)cur_page_number
 {
-    
-    self.source_array = [delegate_board reload_next_page_callback:cur_page_number];
-    [self reload_next_page_callback:self.source_array];
-    
-//    [[BaiduApi2 sharedBaiduApi2] getPath:@"search" parameters:[NSDictionary dictionaryWithObject:[NSString stringWithFormat:@"%d",cur_page_number] forKey:@"pageno"]  success:^(AFHTTPRequestOperation *operation, id JSON) {
-//        
-//        NSMutableArray *f = [NSMutableArray arrayWithArray:[JSON objectFromJSONData]];
-//        //        _result_arr = f;
-//        if (cur_page_number==2) {
-//            [f removeLastObject];
-//            [f removeLastObject];
-//        }
-//        [self reload_next_page_callback:f];
-//        
-//        _reloading = NO;
-//    } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
-//        
-//    }];
+    if ([delegate_board respondsToSelector:@selector(reload_next_page:)]) {
+        [delegate_board reload_next_page:cur_page_number];
+    }
 }
-
--(void)reload_next_page_callback:(NSMutableArray *)r
-{
-    [super reload_next_page_callback:r];
-}
-
+ 
 #pragma mark - table
 - (UITableViewCell *)page_list_view:(UITableView *)tableView cell_for_row_at_index_path:(NSIndexPath *)indexPath {
     static NSString *CellIdentifier = @"Cell";

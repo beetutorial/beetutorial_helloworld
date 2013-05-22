@@ -12,6 +12,7 @@
 
 @implementation B1Board
 @synthesize _news_source_array;
+@synthesize f;
 
 #pragma mark - Lifecycle
 
@@ -112,9 +113,10 @@
 //		_innerView.backgroundColor = [UIColor clearColor];
 //        [self.view addSubview:_innerView];
         
-        _table = [TableBoard board];
+       self.f = [[TestPullViewControllerWithModeViewController alloc] init_with_frame:CGRectMake(0, 0, 320, 400) mode:PageListViewModeDrag];
+        self.f.delegate_board = self;
         
-        [self.view addSubview:_table.view];
+        [self.view addSubview:self.f.view];
         
 //        [self addTopTabView];
 	}
@@ -166,6 +168,15 @@
     return [NSMutableArray arrayWithObjects:@"沪深",@"港股",@"美股", nil];
 }
 
+#pragma mark - 
+-(NSMutableArray *)init_table_data
+{
+    [self api_get_top_news];
+}
 
+-(NSMutableArray *)reload_next_page:(int)cur_page_number
+{
+
+}
 
 @end

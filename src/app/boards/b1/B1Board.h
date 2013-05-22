@@ -15,9 +15,10 @@
 @interface B1Board : No320_UITabBaseBoard
 
 {
-    TableBoard *    _table;
+    
 }
 
+@property(nonatomic,retain,readwrite)TestPullViewControllerWithModeViewController *f;
 @property(nonatomic,retain,readwrite) NSMutableArray *_news_source_array;
 
 @end

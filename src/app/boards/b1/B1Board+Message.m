@@ -91,6 +91,7 @@
 //            _table.s
 			self.title = @"Succeed";
 			
+            [self.f reloadDataSource:self._news_source_array];
 //			[BeeUIAlertView showMessage:[msg.output description] cancelTitle:@"OK"];
 		}
 		else if ( msg.cancelled )

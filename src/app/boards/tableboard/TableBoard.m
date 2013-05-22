@@ -54,6 +54,9 @@
         f.delegate_board = self;
         
         [self.view addSubview:f.view];
+        
+        
+//        [f reloadDataSource:<#(NSArray *)#>];
 	}
 	else if ( [signal is:BeeUIBoard.DELETE_VIEWS] )
 	{
