@@ -1,6 +1,6 @@
 [submodule "vendor/bee_tab"]
 	path = vendor/bee_tab
 	url = https://github.com/beetutorial/bee_tab.git
-[submodule "vendor/no320_list_view"]
-	path = vendor/no320_list_view
-	url = https://github.com/i5ting/no320_list_view.git
+[submodule "vendor/DAModularTableView"]
+	path = vendor/DAModularTableView
+	url = https://github.com/danielamitay/DAModularTableView.git

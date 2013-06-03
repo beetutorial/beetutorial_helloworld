@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "No320_UITabBaseBoard.h"
+#import "InformationViewController.h"
 
 @interface B4Board : No320_UITabBaseBoard
 

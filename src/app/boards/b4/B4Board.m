@@ -42,7 +42,14 @@
         // 界面创建
         self.view.backgroundImage = __BASE_BOARD_IMAGE( @"main_board_bg" );
         //        [self hideNavigationBarAnimated:NO];
+        [self showNavigationBarAnimated:YES];
 		[self setTitleString:@"设置"];
+        
+        InformationViewController *f = [[InformationViewController alloc] initWithStyle:UITableViewStylePlain];
+        
+        f.view.frame = CGRectMake(0, 0, 320, 400);
+        
+        [self.view addSubview:f.view];
 	}
 	else if ( [signal is:BeeUIBoard.DELETE_VIEWS] )
 	{

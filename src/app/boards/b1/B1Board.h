@@ -12,13 +12,14 @@
 
 #import "LoginBoard.h"
 
+
+#import "TViewController.h"
+
 @interface B1Board : No320_UITabBaseBoard
 
 {
     
 }
-
-@property(nonatomic,retain,readwrite)TestPullViewControllerWithModeViewController *f;
-@property(nonatomic,retain,readwrite) NSMutableArray *_news_source_array;
+ @property(nonatomic,retain,readwrite) NSMutableArray *_news_source_array;
 
 @end

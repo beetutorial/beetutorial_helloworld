@@ -6,15 +6,18 @@
 //
 //
 
-#import "TableBoard.h"
-#import "TestPullViewControllerWithModeViewController.h"
+#import "TableBoard.h" 
 
 @interface TableBoard ()
+
+
 
 @end
 
 @implementation TableBoard
 
+@synthesize style = _style;
+@synthesize tableView = _tableView;
 
 #pragma mark - Lifecycle
 
@@ -49,12 +52,10 @@
         [self showNavigationBarAnimated:NO];
 		[self setTitleString:@"表格延时"];
         
-        f = [[TestPullViewControllerWithModeViewController alloc] init_with_frame:CGRectMake(0, 0, 320, 400) mode:PageListViewModeDrag];
-
-        f.delegate_board = self;
-        
-        [self.view addSubview:f.view];
-        
+      
+        self.tableView = [[DAModularTableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
+                                                             style:self.style];
+        self.view = self.tableView;
         
 //        [f reloadDataSource:<#(NSArray *)#>];
 	}
@@ -94,14 +95,29 @@
 }
 
 #pragma mark - 
--(NSMutableArray *)init_table_data
-{
+ 
 
+
+- (id)initWithStyle:(UITableViewStyle)style
+{
+    self = [super initWithStyle:style];
+    if (self = [self init])
+    {
+        self.style = style;
+    }
+    return self;
 }
 
--(NSMutableArray *)reload_next_page:(int)cur_page_number
-{
-
-}
+//- (void)loadView
+//{
+//    self.tableView = [[DAModularTableView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]
+//                                                         style:self.style];
+//    self.view = self.tableView;
+//}
+//
+//- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
+//{
+//    return (interfaceOrientation == UIInterfaceOrientationPortrait);
+//}
 
 @end

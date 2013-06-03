@@ -12,7 +12,7 @@
 
 @implementation B1Board
 @synthesize _news_source_array;
-@synthesize f;
+ 
 
 #pragma mark - Lifecycle
 
@@ -45,8 +45,9 @@
 	{
         [self api_get_top_news];
         [BeeCustomTabBoard hide:YES animated:NO];
-        [[self stack] pushBoard:[LoginBoard board] animated:YES];
-        
+//        [[self stack] pushBoard:[LoginBoard board] animated:YES];
+
+         [[self stack] pushBoard:[TableBoard board] animated:YES];
 //        [[self stack] pushBoard:[TableBoard board] animated:YES];
         
 //		[BeeUIAlertView showMessage:@"Signal received" cancelTitle:@"OK"];
@@ -85,6 +86,8 @@
 		[self.view addSubview:_innerView];
         
         
+        [[self stack] pushBoard:[TViewController board] animated:YES];
+        
 //		innerFrame.size.width = self.viewSize.width - 20.0f;
 //		innerFrame.size.height = 44.0f;
 //		innerFrame.origin.x = 10.0f;
@@ -112,11 +115,6 @@
 //		_innerView = [[Lesson2View1 alloc] initWithFrame:innerFrame];
 //		_innerView.backgroundColor = [UIColor clearColor];
 //        [self.view addSubview:_innerView];
-        
-       self.f = [[TestPullViewControllerWithModeViewController alloc] init_with_frame:CGRectMake(0, 0, 320, 400) mode:PageListViewModeDrag];
-        self.f.delegate_board = self;
-        
-        [self.view addSubview:self.f.view];
         
 //        [self addTopTabView];
 	}
