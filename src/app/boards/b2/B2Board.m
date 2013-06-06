@@ -8,7 +8,16 @@
 
 #import "B2Board.h"
 
+
+@implementation MyTableDelegate
+
+DEF_SINGLETON(MyTableDelegate)
+
+@end
+
 @implementation B2Board
+
+@synthesize mytableview;
 
 
 
@@ -45,6 +54,28 @@
 //        self.view.backgroundImage = __BASE_BOARD_IMAGE( @"main_board_bg" );
         [self showNavigationBarAnimated:NO];
 		[self setTitleString:@"精选"];
+        
+        
+        self.mytableview = [__table_builder get_fast_add_refresh_table_view:self.view];
+        
+        CGRect f = self.mytableview.frame;
+        f.size.height = 400;
+        self.mytableview.frame =f;
+        
+        
+        self.mytableview.cellForRowBlock = ^(UITableViewCell *cell, NSIndexPath *indexPath,id data){
+            cell.textLabel.text = data;
+        };
+        
+        self.mytableview.heightForRowAtIndexPath = ^(NSIndexPath *indexPath){
+            return 44.0f;
+        };
+        
+        [self.mytableview set_delegate:[MyTableDelegate sharedInstance]];
+        
+        NSMutableArray *a = [NSMutableArray arrayWithObjects:@"2",@"2",@"2",@"2",@"2",@"2",@"2",@"2", nil];
+        
+        [self.mytableview reload_data_with_one_section:a];
 	}
 	else if ( [signal is:BeeUIBoard.DELETE_VIEWS] )
 	{

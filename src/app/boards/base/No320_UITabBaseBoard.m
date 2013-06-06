@@ -33,14 +33,15 @@ DEF_SINGLETON(No320_UITabBaseBoard)
     
     [self use_common_bee_ui_navigationbar_background_image];
     
+    __table_builder = [[Bee_TableViewBuilder alloc] initWithStyle:UITableViewStylePlain];
   
-    
 }
 
 - (void)unload
 {
     //do
     
+    [__table_builder release];
     
 	//
 	[super unload];

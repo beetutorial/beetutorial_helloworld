@@ -11,11 +11,16 @@
 #import "Bee_UITopTab.h"
 
 
+#import "Bee_RefreshTableView.h"
+#import "Bee_TableViewBuilder.h"
+#import "Bee_TableViewDelegateBase.h"
 
 @interface No320_UITabBaseBoard : BeeUIBoard
 {
     Lesson2View1 *	_innerView;
     Bee_UITopTab *  _topTabView;
+    
+    Bee_TableViewBuilder * __table_builder;
 }
 
 

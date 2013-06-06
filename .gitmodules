@@ -4,3 +4,6 @@
 [submodule "vendor/DAModularTableView"]
 	path = vendor/DAModularTableView
 	url = https://github.com/danielamitay/DAModularTableView.git
+[submodule "vendor/Bee_RefreshTableView"]
+	path = vendor/Bee_RefreshTableView
+	url = https://github.com/beetutorial/Bee_RefreshTableView.git

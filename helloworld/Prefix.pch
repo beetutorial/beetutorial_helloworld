@@ -15,6 +15,8 @@
 #import <TargetConditionals.h>
 #import "Bee.h"
 #import "helper.h"
+#import "extern.h"
+#import "html.h"
 #endif
 
 #undef	NSLog
